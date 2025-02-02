@@ -202,7 +202,7 @@ If you use this model or dataset in your research, please cite it as follows:
 ```bibtex
 @misc{mistralxgo-7b,
   author = {Prathamesh Devadiga},
-  title = {MistralXGo-7B: Fine-Tuned Model for Go Code Generation},
+  title = {MistralXGo-7B: Fine-Tuned Model for Go Code Generation/Optimization},
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub Repository},
