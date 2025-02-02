@@ -61,7 +61,7 @@ This model is particularly useful for developers who want to quickly prototype G
 - **Precision:** Mixed precision (`bf16` or `fp16` depending on hardware)
 
 The model is hosted on Hugging Face Hub at:  
-[https://huggingface.co/your-username/MistralXGo-7B](https://huggingface.co/your-username/MistralXGo-7B)
+[MistralXGo-7B](https://huggingface.co/devadigaprathamesh/MistralXGo-7B)
 
 ---
 
@@ -167,7 +167,7 @@ func main() {
 
 ```
 
-If you’d like to access the dataset, it can be found here: [Gofiles](combined.go)
+If you’d like to access the dataset, it can be found here: [Gofiles](data/combined.go)
 .
 
 ---
