@@ -18,7 +18,7 @@ def parse_go_file(file_path):
     return [{"instruction": c.strip(), "input": "", "output": code.strip()} 
             for c, code in matches]
 
-# Load your dataset (update the path to your Go file)
+# Load my dataset (update the path to my Go file)
 dataset = parse_go_file("combined.go")
 dataset = Dataset.from_list(dataset).train_test_split(test_size=0.1)
 
@@ -56,7 +56,7 @@ def formatting_prompts_func(examples):
     outputs = examples["output"]
     texts = []
     for instruction, input, output in zip(instructions, inputs, outputs):
-        # Must add EOS_TOKEN, otherwise your generation will go on forever!
+        # Must add EOS_TOKEN, otherwise the generation will go on forever!
         text = f"// {instruction}\n\n{output}{EOS_TOKEN}"
         texts.append(text)
     return {"text": texts}
